@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+macos/**/xcuserdata/
+macos/YouTube Middle Extension/Resources/
+verification/
+LOCAL.md
+macos/build-on-mac.sh

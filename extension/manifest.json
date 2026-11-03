@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Middle",
+  "version": "1.0.0",
+  "description": "Show YouTube's middle video frame instead of uploaded thumbnails.",
+  "permissions": ["storage"],
+  "icons": {"48": "icons/icon-48.png", "96": "icons/icon-96.png", "128": "icons/icon-128.png"},
+  "action": {
+    "default_title": "YouTube thumbnails",
+    "default_popup": "popup.html",
+    "default_icon": {"48": "icons/icon-48.png", "96": "icons/icon-96.png"}
+  },
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*", "https://m.youtube.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }]
+}

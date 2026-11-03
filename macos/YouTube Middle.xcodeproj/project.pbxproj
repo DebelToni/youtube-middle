@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F220FEA33099AF8900EAC311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220FEA23099AF8900EAC311 /* AppDelegate.swift */; };
+		F220FEA73099AF8900EAC311 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F220FEA53099AF8900EAC311 /* Main.html */; };
+		F220FEA93099AF8900EAC311 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F220FEA83099AF8900EAC311 /* Icon.png */; };
+		F220FEAB3099AF8900EAC311 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F220FEAA3099AF8900EAC311 /* Style.css */; };
+		F220FEAD3099AF8900EAC311 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F220FEAC3099AF8900EAC311 /* Script.js */; };
+		F220FEAF3099AF8900EAC311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220FEAE3099AF8900EAC311 /* ViewController.swift */; };
+		F220FEB23099AF8900EAC311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F220FEB03099AF8900EAC311 /* Main.storyboard */; };
+		F220FEB43099AF8A00EAC311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F220FEB33099AF8A00EAC311 /* Assets.xcassets */; };
+		F220FEBB3099AF8A00EAC311 /* YouTube Middle Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F220FEBA3099AF8A00EAC311 /* YouTube Middle Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F220FEC03099AF8A00EAC311 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220FEBF3099AF8A00EAC311 /* SafariWebExtensionHandler.swift */; };
+		F220FED23099AF8A00EAC311 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = F220FECC3099AF8A00EAC311 /* popup.js */; };
+		F220FED33099AF8A00EAC311 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = F220FECD3099AF8A00EAC311 /* popup.html */; };
+		F220FED43099AF8A00EAC311 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = F220FECE3099AF8A00EAC311 /* icons */; };
+		F220FED53099AF8A00EAC311 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F220FECF3099AF8A00EAC311 /* manifest.json */; };
+		F220FED63099AF8A00EAC311 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = F220FED03099AF8A00EAC311 /* popup.css */; };
+		F220FED73099AF8A00EAC311 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = F220FED13099AF8A00EAC311 /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F220FEBC3099AF8A00EAC311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F220FE973099AF8900EAC311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F220FEB93099AF8A00EAC311;
+			remoteInfo = "YouTube Middle Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F220FEC73099AF8A00EAC311 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				F220FEBB3099AF8A00EAC311 /* YouTube Middle Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F220FE9F3099AF8900EAC311 /* YouTube Middle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube Middle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F220FEA23099AF8900EAC311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F220FEA63099AF8900EAC311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		F220FEA83099AF8900EAC311 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F220FEAA3099AF8900EAC311 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		F220FEAC3099AF8900EAC311 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		F220FEAE3099AF8900EAC311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F220FEB13099AF8900EAC311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F220FEB33099AF8A00EAC311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F220FEB53099AF8A00EAC311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F220FEBA3099AF8A00EAC311 /* YouTube Middle Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YouTube Middle Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F220FEBF3099AF8A00EAC311 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		F220FEC13099AF8A00EAC311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F220FECC3099AF8A00EAC311 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		F220FECD3099AF8A00EAC311 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		F220FECE3099AF8A00EAC311 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		F220FECF3099AF8A00EAC311 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		F220FED03099AF8A00EAC311 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = Resources/popup.css; sourceTree = "<group>"; };
+		F220FED13099AF8A00EAC311 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F220FE9C3099AF8900EAC311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		F220FEB73099AF8A00EAC311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F220FE963099AF8900EAC311 = {
+			isa = PBXGroup;
+			children = (
+				F220FEA13099AF8900EAC311 /* YouTube Middle */,
+				F220FEBE3099AF8A00EAC311 /* YouTube Middle Extension */,
+				F220FEA03099AF8900EAC311 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F220FEA03099AF8900EAC311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F220FE9F3099AF8900EAC311 /* YouTube Middle.app */,
+				F220FEBA3099AF8A00EAC311 /* YouTube Middle Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F220FEA13099AF8900EAC311 /* YouTube Middle */ = {
+			isa = PBXGroup;
+			children = (
+				F220FEA23099AF8900EAC311 /* AppDelegate.swift */,
+				F220FEAE3099AF8900EAC311 /* ViewController.swift */,
+				F220FEB03099AF8900EAC311 /* Main.storyboard */,
+				F220FEB33099AF8A00EAC311 /* Assets.xcassets */,
+				F220FEB53099AF8A00EAC311 /* Info.plist */,
+				F220FEA43099AF8900EAC311 /* Resources */,
+			);
+			path = "YouTube Middle";
+			sourceTree = "<group>";
+		};
+		F220FEA43099AF8900EAC311 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F220FEA53099AF8900EAC311 /* Main.html */,
+				F220FEA83099AF8900EAC311 /* Icon.png */,
+				F220FEAA3099AF8900EAC311 /* Style.css */,
+				F220FEAC3099AF8900EAC311 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F220FEBE3099AF8A00EAC311 /* YouTube Middle Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F220FECB3099AF8A00EAC311 /* Resources */,
+				F220FEBF3099AF8A00EAC311 /* SafariWebExtensionHandler.swift */,
+				F220FEC13099AF8A00EAC311 /* Info.plist */,
+			);
+			path = "YouTube Middle Extension";
+			sourceTree = "<group>";
+		};
+		F220FECB3099AF8A00EAC311 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F220FECC3099AF8A00EAC311 /* popup.js */,
+				F220FECD3099AF8A00EAC311 /* popup.html */,
+				F220FECE3099AF8A00EAC311 /* icons */,
+				F220FECF3099AF8A00EAC311 /* manifest.json */,
+				F220FED03099AF8A00EAC311 /* popup.css */,
+				F220FED13099AF8A00EAC311 /* content.js */,
+			);
+			name = Resources;
+			path = "YouTube Middle Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F220FE9E3099AF8900EAC311 /* YouTube Middle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F220FEC83099AF8A00EAC311 /* Build configuration list for PBXNativeTarget "YouTube Middle" */;
+			buildPhases = (
+				F220FE9B3099AF8900EAC311 /* Sources */,
+				F220FE9C3099AF8900EAC311 /* Frameworks */,
+				F220FE9D3099AF8900EAC311 /* Resources */,
+				F220FEC73099AF8A00EAC311 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F220FEBD3099AF8A00EAC311 /* PBXTargetDependency */,
+			);
+			name = "YouTube Middle";
+			productName = "YouTube Middle";
+			productReference = F220FE9F3099AF8900EAC311 /* YouTube Middle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F220FEB93099AF8A00EAC311 /* YouTube Middle Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F220FEC43099AF8A00EAC311 /* Build configuration list for PBXNativeTarget "YouTube Middle Extension" */;
+			buildPhases = (
+				F220FEB63099AF8A00EAC311 /* Sources */,
+				F220FEB73099AF8A00EAC311 /* Frameworks */,
+				F220FEB83099AF8A00EAC311 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "YouTube Middle Extension";
+			productName = "YouTube Middle Extension";
+			productReference = F220FEBA3099AF8A00EAC311 /* YouTube Middle Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F220FE973099AF8900EAC311 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					F220FE9E3099AF8900EAC311 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					F220FEB93099AF8A00EAC311 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = F220FE9A3099AF8900EAC311 /* Build configuration list for PBXProject "YouTube Middle" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F220FE963099AF8900EAC311;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F220FEA03099AF8900EAC311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F220FE9E3099AF8900EAC311 /* YouTube Middle */,
+				F220FEB93099AF8A00EAC311 /* YouTube Middle Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F220FE9D3099AF8900EAC311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				F220FEA93099AF8900EAC311 /* Icon.png in Resources */,
+				F220FEB23099AF8900EAC311 /* Main.storyboard in Resources */,
+				F220FEAD3099AF8900EAC311 /* Script.js in Resources */,
+				F220FEA73099AF8900EAC311 /* Main.html in Resources */,
+				F220FEB43099AF8A00EAC311 /* Assets.xcassets in Resources */,
+				F220FEAB3099AF8900EAC311 /* Style.css in Resources */,
+			);
+		};
+		F220FEB83099AF8A00EAC311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				F220FED73099AF8A00EAC311 /* content.js in Resources */,
+				F220FED63099AF8A00EAC311 /* popup.css in Resources */,
+				F220FED53099AF8A00EAC311 /* manifest.json in Resources */,
+				F220FED43099AF8A00EAC311 /* icons in Resources */,
+				F220FED23099AF8A00EAC311 /* popup.js in Resources */,
+				F220FED33099AF8A00EAC311 /* popup.html in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F220FE9B3099AF8900EAC311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				F220FEAF3099AF8900EAC311 /* ViewController.swift in Sources */,
+				F220FEA33099AF8900EAC311 /* AppDelegate.swift in Sources */,
+			);
+		};
+		F220FEB63099AF8A00EAC311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				F220FEC03099AF8A00EAC311 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F220FEBD3099AF8A00EAC311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F220FEB93099AF8A00EAC311 /* YouTube Middle Extension */;
+			targetProxy = F220FEBC3099AF8A00EAC311 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F220FEA53099AF8900EAC311 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F220FEA63099AF8900EAC311 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		F220FEB03099AF8900EAC311 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F220FEB13099AF8900EAC311 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F220FEC23099AF8A00EAC311 /* Debug configuration for PBXProject "YouTube Middle" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F220FEC33099AF8A00EAC311 /* Release configuration for PBXProject "YouTube Middle" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F220FEC53099AF8A00EAC311 /* Debug configuration for PBXNativeTarget "YouTube Middle Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YouTube Middle Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "YouTube Middle Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "foo.toni.youtube-middle.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F220FEC63099AF8A00EAC311 /* Release configuration for PBXNativeTarget "YouTube Middle Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YouTube Middle Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "YouTube Middle Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "foo.toni.youtube-middle.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F220FEC93099AF8A00EAC311 /* Debug configuration for PBXNativeTarget "YouTube Middle" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YouTube Middle/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "YouTube Middle";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "foo.toni.youtube-middle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F220FECA3099AF8A00EAC311 /* Release configuration for PBXNativeTarget "YouTube Middle" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YouTube Middle/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "YouTube Middle";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "foo.toni.youtube-middle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F220FE9A3099AF8900EAC311 /* Build configuration list for PBXProject "YouTube Middle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F220FEC23099AF8A00EAC311 /* Debug configuration for PBXProject "YouTube Middle" */,
+				F220FEC33099AF8A00EAC311 /* Release configuration for PBXProject "YouTube Middle" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		F220FEC43099AF8A00EAC311 /* Build configuration list for PBXNativeTarget "YouTube Middle Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F220FEC53099AF8A00EAC311 /* Debug configuration for PBXNativeTarget "YouTube Middle Extension" */,
+				F220FEC63099AF8A00EAC311 /* Release configuration for PBXNativeTarget "YouTube Middle Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		F220FEC83099AF8A00EAC311 /* Build configuration list for PBXNativeTarget "YouTube Middle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F220FEC93099AF8A00EAC311 /* Debug configuration for PBXNativeTarget "YouTube Middle" */,
+				F220FECA3099AF8A00EAC311 /* Release configuration for PBXNativeTarget "YouTube Middle" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F220FE973099AF8900EAC311 /* Project object */;
+	validationLevel = 1;
+}

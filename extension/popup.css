@@ -1,0 +1,12 @@
+:root { color-scheme: light dark; font: 13px -apple-system, BlinkMacSystemFont, sans-serif; }
+body { margin: 0; padding: 16px; width: 224px; }
+fieldset { border: 0; padding: 0; margin: 0; }
+legend { padding: 0; margin-bottom: 12px; font-weight: 600; }
+.choices { display: flex; padding: 3px; border-radius: 8px; background: light-dark(#eeeef0, #353538); }
+label { position: relative; flex: 1; cursor: pointer; }
+input { position: absolute; opacity: 0; }
+span { display: block; padding: 8px; border-radius: 6px; text-align: center; }
+input:checked + span { background: light-dark(white, #626266); font-weight: 600; }
+input:focus-visible + span { outline: 2px solid #007aff; outline-offset: 1px; }
+fieldset:disabled { opacity: .5; }
+#error { margin: 12px 0 0; color: light-dark(#c00, #ff6961); }

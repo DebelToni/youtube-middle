@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube thumbnails</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <fieldset disabled>
+    <legend>Thumbnails</legend>
+    <div class="choices">
+      <label><input type="radio" name="mode" value="original"><span>Original</span></label>
+      <label><input type="radio" name="mode" value="middle"><span>Middle</span></label>
+    </div>
+  </fieldset>
+  <p id="error" role="alert" hidden>Couldn’t save. Try again.</p>
+  <script src="popup.js"></script>
+</body>
+</html>
